@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
     <title>Reservia</title>
     <meta name="descripton" content="Trouvez votre hébergement et les activités &agrave; faire dans la ville de votre choix en quelques clics avec Reservia."/>
+    <script src="https://kit.fontawesome.com/c832999ee1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,58 +29,69 @@
         <!-- Section 1 : Recherche et filtres -->
         <section>
             <h1>Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <p id="description">En plein centre ville ou en pleine nature</p>
 
-            <div id="icon_localisation">
-                <img/>
+            <div id="container_search">
+                <div id="icon_mapmarker">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <form method="post" action="recherche.php">
+                    <label for="city"></label>
+                    <input type="search" name="city" id="city" value="Marseille, France"/><input type="submit" value="Rechercher"/>
+                </form>
             </div>
 
-            <form method="post" action="recherche.php">
-                <label for="city"></label>
-                <input type="search" name="city" id="city" value="Marseille, France"/>
-                <input type="submit" value="Rechercher"/>
-            </form>
-
-            <div>
+            <div id="container_filters">
                 <p>Filtres</p>
-                <ul>
+                <ul>     
                     <li>
-                        <div class="icon">
-                            <img/>
-                        </div>
-                        <div>
-                            <button>&Eacute;conomique</button>
-                        </div>
+                        <button type="button" class="button">
+                            <div class="icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="filtre">
+                                &Eacute;conomique
+                            </div>
+                        </button>
                     </li>
                     <li>
-                        <div class="icon">
-                            <img/>
-                        </div>
-                        <div>
-                            <button>Familial</button>
-                        </div>
+                        <button type="button" class="button">
+                            <div class="icon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <div class="filtre">
+                                Familial
+                            </div>
+                        </button>
                     </li>
                     <li>
-                        <div class="icon">
-                            <img/>
-                        </div>
-                        <div>
-                            <button>Romantique</button>
-                        </div>
+                        <button type="button" class="button">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="filtre">
+                                Romantique
+                            </div>
+                        </button>
                     </li>
                     <li>
-                        <div class="icon">
-                            <img/>
-                        </div>
-                        <div>
-                            <button>Animaux autoris&eacute;s</button>
-                        </div>
+                        <button type="button" class="button">
+                            <div class="icon">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <div class="filtre">
+                                Animaux autorisés
+                            </div>
+                        </button>
                     </li>
                 </ul>
             </div>
 
-            <div>
-                <img/>
+            <div id="info">
+                <div id="icon_info">
+                    <i class="fas fa-info"></i>
+                </div>
                 <p>Plus de 500 logements sont disponiles dans cette ville</p>
             </div>
 
