@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
-#bloc_page{
+#bloc_page, #container_footer{
     width: 1200px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -348,6 +348,44 @@ h2{
     height: 180px;
 }
 
+/* FOOTER */
+
+footer{
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
+
+#container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#footer_about, #footer_hebergements, #footer_contact{
+    width: 33%;
+}
+
+#container_footer h2{
+    font-size: 1.1em;
+}
+
+#container_footer ul{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+#container_footer a{
+    text-decoration: none;
+    color: black;
+    line-height: 2em;
+}
+
+#container_footer a:hover{
+    color: #0065FC;
+}
 
 
 
