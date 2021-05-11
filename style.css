@@ -155,6 +155,107 @@ input[type=submit]{
     font-size: 0.7em;
 }
 
+/* Section 2 : hébergements à Marseille */
+
+#section_hebergements{ /* Toute la section */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#section_hebergements h2{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#hebergements_marseille, #plus_populaires{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-right: 33px;
+}
+
+#hebergements_marseille{ /*Hébergements à Marseille */
+    flex: 4 0 0;
+}
+
+#afficher{
+    margin-top: 30px;
+}
+
+#afficher a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+#hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 380px;
+}
+
+.vignette_hebergement{
+
+    box-shadow: 2px 4px 3px #dddddd;
+    background-color: #fff;
+    width: 31%;
+}
+
+.vignette_hebergement, .vignette_hebergement a{
+    border-radius: 20px;
+}
+
+.vignette_hebergement a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+#hebergements a:hover{
+    background-color: #DEEBFF;
+}
+
+.vignette_padding{
+    padding: 5px;
+}
+
+.hebergement_img{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+}
+
+.description{
+    padding: 0 8px 0 8px;
+}
+
+.description p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.hotel_name{
+    font-weight: 700;
+}
+
+
+.stars{
+    color: #0065FC;
+    font-size: 0.8em;
+}
+
+#empty_star{
+    color: #dddddd;
+}
+
+#plus_populaires{ /* Hébergements les plus populaires */
+    flex: 2 0 0;  
+}
+
 
 
 
