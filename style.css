@@ -7,7 +7,19 @@
     font-size: 0.9em;
 }
 
-/* Header */
+h1{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+
+/* HEADER */
 
 header{
     display: flex;
@@ -58,11 +70,7 @@ nav a:focus{ /* quand le lien est sélectionné */
 
 /* Section 1 : recherche et filtres */
 
-h1{
-    font-size: 1.4em;
-    font-weight: 700;
-    margin-bottom: 0;
-}
+
 
 #description{
     margin-top: 5px;
@@ -74,9 +82,9 @@ h1{
     align-items: center;
 }
 
- #icon_mapmarker{
+#icon_mapmarker{
      background-color: #F2F2F2;
-     padding: 10px;
+     padding: 10px 13px 10px 13px;
      border-radius: 8px 0 0 8px;
  }
 
@@ -110,7 +118,7 @@ input[type=submit]{
 
 #container_filters li{
     list-style-type: none;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .button{
@@ -155,18 +163,27 @@ input[type=submit]{
     font-size: 0.7em;
 }
 
-/* Section 2 : hébergements à Marseille */
+/* SECTION 2 : HEBERGEMENTS A MARSEILLE */
 
-#section_hebergements{ /* Toute la section */
+/* lien thumbnail */
+
+.link_thumbnail{
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.link_thumbnail:hover{
+    background-color: #DEEBFF;
+}
+
+/* Section hébergement */
+
+#section_hebergements{ 
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     margin-top: 20px;
-}
-
-h2{
-    font-size: 1.3em;
-    font-weight: 700;
 }
 
 #container_hebergement, #container_populaire{
@@ -175,7 +192,7 @@ h2{
     padding: 20px 30px;
 }
 
-#container_hebergement{ /*Hébergements à Marseille */
+#container_hebergement{
     flex: 5 0 0;
     margin-right: 33px;
 }
@@ -198,17 +215,17 @@ h2{
 
 }
 
-.vignette_hebergement, .vignette_populaire{
+.thumbnail_hebergement, .thumbnail_populaire{
     box-shadow: 2px 4px 3px #dddddd;
     background-color: #fff;
     margin-bottom: 30px;
 }
 
-.vignette_hebergement{
+.thumbnail_hebergement{
     width: 31%;
 }
 
-.vignette_hebergement, .vignette_hebergement a, .vignette_populaire, .vignette_populaire a{
+.thumbnail_hebergement, .thumbnail_hebergement a, .thumbnail_populaire, .thumbnail_populaire a{
     border-radius: 15px;
 }
 
@@ -224,7 +241,7 @@ h2{
     border-radius: 15px 0 0 15px;
 }
 
-.vignette_padding, .vignette_flex{
+.thumbnail_padding, .thumbnail_flex{
     padding: 4px;
 }
 
@@ -251,19 +268,10 @@ h2{
     color: #dddddd;
 }
 
-.vignette_hebergement a, .vignette_populaire a, .vignette_activite a, .petite_vignette a{
-    text-decoration: none;
-    color: #000;
-    display: block;
-}
 
-.vignette_hebergement a:hover, .vignette_populaire a:hover, .vignette_activite a:hover, .petite_vignette a:hover{
-    background-color: #DEEBFF;
-}
 
 #container_populaire{ /* Hébergements les plus populaires */
     flex: 2 0 0;
- 
 }
 
 #titre_populaire{
@@ -282,7 +290,7 @@ h2{
     justify-content: space-between;
 }
 
-.vignette_flex{
+.thumbnail_flex{
     display: flex;
     flex-direction: row;
 }
@@ -303,19 +311,19 @@ h2{
     justify-content: space-between;
 }
 
-.vignette_activite, .vignette_activite_2{
+.thumbnail_activite, .thumbnail_activite_2{
     width: 23%;
 }
 
-.vignette_activite, .vignette_activite a{
+.thumbnail_activite, .thumbnail_activite a{
     height: 400px;
 }
 
-.vignette_activite, .vignette_activite a, .petite_vignette, .petite_vignette a{
+.thumbnail_activite, .thumbnail_activite a, .petite_thumbnail, .petite_thumbnail a{
     border-radius: 15px;
 }
 
-.vignette_activite, .petite_vignette{
+.thumbnail_activite, .petite_thumbnail{
     box-shadow: 2px 4px 3px #dddddd;
     background-color: #fff;
 }
@@ -337,14 +345,14 @@ h2{
     font-weight: 700;
 }
 
-.vignette_activite_2{
+.thumbnail_activite_2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
 }
 
-.petite_vignette, .petite_vignette a{
+.petite_thumbnail, .petite_thumbnail a{
     height: 180px;
 }
 
