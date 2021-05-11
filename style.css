@@ -164,7 +164,7 @@ input[type=submit]{
     margin-top: 20px;
 }
 
-#section_hebergements h2{
+h2{
     font-size: 1.3em;
     font-weight: 700;
 }
@@ -237,7 +237,7 @@ input[type=submit]{
     margin-bottom: 6px;
 }
 
-.hotel_name{
+.hotel_name, .activitie_name{
     font-weight: 700;
     font-size: 1.1em;
 }
@@ -251,13 +251,13 @@ input[type=submit]{
     color: #dddddd;
 }
 
-.vignette_hebergement a, .vignette_populaire a{
+.vignette_hebergement a, .vignette_populaire a, .vignette_activite a, .petite_vignette a{
     text-decoration: none;
     color: #000;
     display: block;
 }
 
-.vignette_hebergement a:hover, .vignette_populaire a:hover{
+.vignette_hebergement a:hover, .vignette_populaire a:hover, .vignette_activite a:hover, .petite_vignette a:hover{
     background-color: #DEEBFF;
 }
 
@@ -280,7 +280,6 @@ input[type=submit]{
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-
 }
 
 .vignette_flex{
@@ -292,12 +291,81 @@ input[type=submit]{
     margin-top: 30px;
 }
 
+/* Section 3 : activités */
+
+#container_activite{
+    margin-top: 50px;
+}
+
+#blocs_activite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vignette_activite, .vignette_activite_2{
+    width: 23%;
+}
+
+.vignette_activite, .vignette_activite a{
+    height: 400px;
+}
+
+.vignette_activite, .vignette_activite a, .petite_vignette, .petite_vignette a{
+    border-radius: 15px;
+}
+
+.vignette_activite, .petite_vignette{
+    box-shadow: 2px 4px 3px #dddddd;
+    background-color: #fff;
+}
+
+.activite_img, .activite_img_2{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite_img{
+    height: 350px;
+}
+.activite_img_2{
+    height: 130px;
+}
+
+.activity_name{
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.vignette_activite_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.petite_vignette, .petite_vignette a{
+    height: 180px;
+}
 
 
 
 
+/* test background */
+.test_activites{
+    height: 400px;
+    width: 21%;
+    border-radius: 15px;
+    box-shadow: 2px 4px 3px #dddddd;
+}
 
-  
+#vieux_port{
+    height: 80%;
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat ;
+}
 
+.test_activites a:hover{
+    background-color: blue;
+}
 
 
