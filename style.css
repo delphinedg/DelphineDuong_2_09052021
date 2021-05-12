@@ -36,7 +36,7 @@ nav ul{
 }
 
 nav li{
-    margin-right: 60px ;
+    margin-right: 68px ;
 
 }
 
@@ -51,13 +51,13 @@ nav a {
 
 }
   
-nav a:hover { /* au survol */
+nav a:hover {
     border-top: 2px solid #0065FC;
     padding-top: 25px;
     color: #0065FC;
 }
 
-nav a:focus{ /* quand le lien est sélectionné */
+nav a:focus{
     border-top: 2px solid #0065FC;
     padding-top: 25px;
     color: #0065FC;
@@ -70,8 +70,6 @@ nav a:focus{ /* quand le lien est sélectionné */
 
 /* Section 1 : recherche et filtres */
 
-
-
 #description{
     margin-top: 5px;
     margin-bottom: 20px;
@@ -80,26 +78,29 @@ nav a:focus{ /* quand le lien est sélectionné */
 #container_search{
     display: flex;
     align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    width: 347px;
 }
 
 #icon_mapmarker{
      background-color: #F2F2F2;
      padding: 10px 13px 10px 13px;
-     border-radius: 8px 0 0 8px;
+     border-radius: 10px 0 0 10px;
  }
 
 input{
     font-weight: 700;
     padding: 10px;
-    border: #F2F2F2 1px solid;
+    font-size: 1em;
+    border: none;
 }
 
 input[type=submit]{
     background-color: #0065FC;
     color: #fff;
-    border-radius: 0 6px 6px 0;
     cursor: pointer;
-    border: 1px solid #0065FC;
+    border-radius: 0 10px 10px 0;
 }
 
 #container_filters{
@@ -108,12 +109,14 @@ input[type=submit]{
     align-items: center;
 }
 
-#container_filters p{
+#container_filters p, .filtre{
     font-weight: 700;
+    font-size: 1.1em;
 }
 
 #container_filters ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 #container_filters li{
@@ -128,7 +131,7 @@ input[type=submit]{
     font-weight: 700;
     background-color: #fff;
     border: 1px solid #dddddd;
-    border-radius: 20px;
+    padding: 0;
 }
 
 #container_filters button:hover{
@@ -142,11 +145,14 @@ input[type=submit]{
     background-color: #DEEBFF;
     width: 15px;
     height: 15px;
+}
+
+.button, .icon{
     border-radius: 20px;
 }
 
 .filtre{
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
 }
 
 #info{
@@ -159,7 +165,7 @@ input[type=submit]{
     padding: 2px 6px;
     border-radius: 15px;
     color: #0065FC;
-    margin-right: 5px;
+    margin-right: 10px;
     font-size: 0.7em;
 }
 
@@ -176,8 +182,13 @@ input[type=submit]{
 .link_thumbnail:hover{
     background-color: #DEEBFF;
 }
+/* Images thumbnails */
 
-/* Section hébergement */
+.hebergement_img, .populaire_img, .activite_img, .activite_img_2{
+    object-fit: cover;
+}
+
+/* hébergement */
 
 #section_hebergements{ 
     display: flex;
@@ -268,9 +279,9 @@ input[type=submit]{
     color: #dddddd;
 }
 
+/* les plus populaires */
 
-
-#container_populaire{ /* Hébergements les plus populaires */
+#container_populaire{
     flex: 2 0 0;
 }
 
@@ -299,7 +310,7 @@ input[type=submit]{
     margin-top: 30px;
 }
 
-/* Section 3 : activités */
+/* SECTION 3 : ACTIVITES A MARSEILLE */
 
 #container_activite{
     margin-top: 50px;
@@ -319,11 +330,11 @@ input[type=submit]{
     height: 400px;
 }
 
-.thumbnail_activite, .thumbnail_activite a, .petite_thumbnail, .petite_thumbnail a{
+.thumbnail_activite, .thumbnail_activite a, .small_thumbnail, .small_thumbnail a{
     border-radius: 15px;
 }
 
-.thumbnail_activite, .petite_thumbnail{
+.thumbnail_activite, .small_thumbnail{
     box-shadow: 2px 4px 3px #dddddd;
     background-color: #fff;
 }
@@ -352,7 +363,7 @@ input[type=submit]{
     height: 400px;
 }
 
-.petite_thumbnail, .petite_thumbnail a{
+.small_thumbnail, .small_thumbnail a{
     height: 180px;
 }
 
