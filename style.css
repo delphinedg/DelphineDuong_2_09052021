@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
+body{
+    margin: 0;
+}
+
 #bloc_page, #container_footer{
     width: 1200px;
     margin: auto;
@@ -414,13 +418,13 @@ input[type=submit]{
 /* Images */
 
 .img_activite{
-    height: 350px;
+    height: 88%;
     background-size: cover;
     background-position: center;
 }
 
 .img_activite_2{
-    height: 130px;
+    height: 73%;
     background-size: cover;
     background-position: center;
 }
@@ -504,18 +508,21 @@ footer{
     color: #0065FC;
 }
 
+/* desktop less than 1200 */
 @media all and (max-width:1200px){
     #bloc_page, #container_footer{
         width: auto;
         margin: auto 15px auto 15px;
     }
 
+    .stars_populaire{
+        margin-top: 0;
+    }
+
 }
 
+/* tablets - less than 992px */
 @media all and (max-width:992px){
-    #bloc_page, #container_footer{
-        font-size: 0.8em;
-    }
 
     #container_filters p, .filtre, .hotel_name {
         font-size: 1em;
@@ -539,9 +546,11 @@ footer{
         margin-bottom: 0;
     }
 
-    .stars_populaire{
-        margin-top: 15px;
+    .thumbnail_content_pop{
+        height: 110px;
     }
+
+
 
     #container_hebergement, #container_populaire {
         padding: 10px 25px;
@@ -557,9 +566,172 @@ footer{
 
 }
 
+/* landscape phone - less than 767px */
 @media all and (max-width:768px){
+
+    body{
+        margin: 0;
+    }
+
+    #bloc_page, #container_footer{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    header, #section1, #container_populaire, #container_hebergement, #container_activite, footer{
+        padding: 0 20px;
+    }
+
     header{
         flex-direction: column;
+        margin-top: 20px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #menu{
+        font-size: 1.2em;
+    }
+
+    #logo_reservia{
+        align-self: flex-start;
+    }
+
+    #inscription{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+
+    nav a:hover, #link_inscription:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 18px;
+        color: #0065FC;
+    }
+    
+    nav a:focus{
+        border-top: 2px solid #0065FC;
+        padding-top: 25px;
+        color: #0065FC;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    #container_search{
+        width: 376px;
+    }
+    
+    #container_filters{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #container_filters ul{
+        padding-left: 0;
+    }
+
+    #container_filters li{
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    .filtre{
+        font-size: 1.1em;
+    }
+
+    #container_filters p{
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    #container_hebergement{
+        background-color: #fff;
+    }
+
+    #container_populaire{
+        border-radius: 0;
+    }
+
+    .thumbnail_hebergement, .thumbnail_populaire, .thumbnail_activite, .thumbnail_activite_2{
+        width: 90%;
+    }
+
+    #blocs_populaire {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail_populaire{
+        margin-bottom: 15px;
+    }
+
+    .thumbnail_content_pop{
+        height: 100px;
+    }
+
+    .description_pop, .description{
+        font-size: 1.1em;
+    }
+
+    #blocs_activite, #blocs_hebergement{
+        justify-content: center;
+    }
+
+    #afficher{
+        text-align: center;
+    }
+
+    #container_activite{
+        margin-top: 20px;
+    }
+
+    .thumbnail_activite, .thumbnail_activite a{
+        height: 180px;
+    }
+
+    .img_activite{
+        height: 75%;
+    }
+
+    .thumbnail_activite, .thumbnail_activite_2{
+        margin-bottom: 20px;
+    }
+
+    .thumbnail_activite_2 {
+        height: 380px;
+    }   
+    
+    footer{
+        margin-top: 30px;
+    }
+
+    #container_footer{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #footer_about, #footer_hebergements, #footer_contact {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media all and (max-width:576px){
+    .thumbnail_hebergement, .thumbnail_populaire, .thumbnail_activite, .thumbnail_activite_2{
+        width: 100%;
+    }
+
+    #footer_about, #footer_hebergements, #footer_contact {
+        text-align: left;
+    }
+
+    #afficher{
+        text-align: left;
     }
 }
 
