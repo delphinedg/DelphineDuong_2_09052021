@@ -96,9 +96,8 @@ nav a:hover, nav a:active, nav a:focus{
 
 #icon_mapmarker{
      background-color: #F2F2F2;
-     padding: 11px 13px 11px 13px;
+     padding: 12px 13px 12px 13px;
      border-radius: 10px 0 0 10px;
-     border: 1px solid #F2F2F2;
      border-right: none;
  }
 
@@ -116,6 +115,7 @@ input{
 input[type=search]{
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+    padding: 10px;
 }
 
 input[type=submit]{
@@ -123,8 +123,8 @@ input[type=submit]{
     color: #fff;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
-    border: 1px solid #0065FC;
     border-left: none;
+    padding: 11px;
 }
 
 #container_filters{
@@ -165,11 +165,10 @@ input[type=submit]{
 
 .icon{
     color: #0065FC;
-    padding: 10px;
+    padding: 12px;
     background-color: #DEEBFF;
     width: 15px;
     height: 15px;
-    border: 1px solid #DEEBFF;
 }
 
 .button, .icon{
@@ -242,7 +241,7 @@ input[type=submit]{
 #afficher a{
     text-decoration: none;
     color: #000;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #afficher a:hover{
@@ -650,11 +649,10 @@ footer{
         display: inline;
         background-color:#0065FC;
         color: #fff;
-        padding: 12px;
+        padding: 13px 14px;
         border-radius: 10px;
-        border: 1px solid #0065FC;
+        border: none;
         font-size: 1em;
-
     }
 
     #container_hebergement{
