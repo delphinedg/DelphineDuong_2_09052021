@@ -353,7 +353,7 @@ body img{
     font-size: 0.8em;
 }
 
-#empty_star{
+.empty_star{
     color: #dddddd;
 }
 
@@ -505,7 +505,6 @@ footer{
 /* tablets - less than 992px */
 @media all and (max-width:992px){
 
-
     #section_hebergements{
         flex-direction: column-reverse;
     }
@@ -649,18 +648,13 @@ footer{
 
     #icon_rechercher{
         display: inline;
-        position: relative;
+        background-color:#0065FC;
+        color: #fff;
+        padding: 12px;
         border-radius: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+        border: 1px solid #0065FC;
+        font-size: 1em;
 
-    #icon_rechercher:before{
-        display: absolute;
-        font-family: "Font Awesome 5 Free";
-        content: "/f002";
-        font-size: 2em;
-        color: red;
     }
 
     #container_hebergement{
