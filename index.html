@@ -7,6 +7,8 @@
     <title>Reservia</title>
     <meta name="descripton" content="Trouvez votre hébergement et les activités &agrave; faire dans la ville de votre choix en quelques clics avec Reservia."/>
     <script src="https://kit.fontawesome.com/c832999ee1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +22,8 @@
             <div id="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">H&eacute;bergements</a></li>
-                        <li><a href="#">Activit&eacute;s</a></li>                   
+                        <li><a href="#section_hebergements" id="lien_hebergements">H&eacute;bergements</a></li>
+                        <li><a href="#section_activites" id="lien_activites">Activit&eacute;s</a></li>                   
                     </ul>
                 </nav> 
                 <div id="inscription">
@@ -42,11 +44,7 @@
                 </div>
 
                 <form method="post" action="recherche.php">
-                    <input type="search" name="city" id="city" value="Marseille, France"/>
-                    <input type="submit" value="Rechercher" id="txt_rechercher"/>
-                    <button type="button" id="icon_rechercher">
-                        <i class="fas fa-search"></i>
-                    </button>
+                    <input type="search" name="city" id="city" value="Marseille, France" placeholder="Où allez-vous ?"/><input type="submit" value="Rechercher" id="txt_rechercher"/><button type="button" id="icon_rechercher"><i class="fas fa-search"></i></button>
                 </form>
             </div>
 
@@ -328,7 +326,7 @@
 
         <!-- Section 3 : Activités à Marseille -->
 
-        <section>
+        <section id="section_activites">
             <div id="container_activite">
                 <h2>Activit&eacute;s &agrave; Marseille</h2>
 
