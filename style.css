@@ -467,7 +467,7 @@ footer{
 }
 
 #footer_about, #footer_hebergements, #footer_contact{
-    width: 33%;
+    width: 33.3%;
 }
 
 #container_footer h2{
@@ -580,7 +580,7 @@ footer{
 
 }
 
-/* landscape phone - less than 767px */
+/* mobile - less than 767px */
 @media all and (max-width:767px){
 
     body{
@@ -723,7 +723,7 @@ footer{
     }
 
     .thumbnail_hebergement, .thumbnail_populaire, .thumbnail_activite, .thumbnail_activite_2{
-        width: 90%;
+        width: 100%;
     }
 
     #blocs_populaire {
@@ -774,19 +774,8 @@ footer{
 
     #footer_about, #footer_hebergements, #footer_contact {
         width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-}
-
-@media all and (max-width:576px){
-    .thumbnail_hebergement, .thumbnail_populaire, .thumbnail_activite, .thumbnail_activite_2{
-        width: 100%;
-    }
-
-    #footer_about, #footer_hebergements, #footer_contact {
         text-align: left;
+        margin-bottom: 20px;
     }
 
 }
