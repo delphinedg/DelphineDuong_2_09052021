@@ -56,6 +56,7 @@ nav a {
     font-weight: 500;
     font-size: 1.1em;
     padding: 0 25px;
+    color: grey;
 }
 
 #lien_hebergements{
@@ -64,15 +65,11 @@ nav a {
     padding-top: 43px;
 }
 
-#lien_activites{
-    color: grey;
-}
-
 nav a:visited{
     color: grey;
 }
 
-nav a:hover, nav a:active, nav a:focus{
+#lien_activites:hover, #lien_activites:active, #lien_hebergements:hover, #lien_heebergements:active{
     border-top: 2px solid #0065FC;
     padding-top: 43px;
     color: #0065FC;
@@ -655,13 +652,13 @@ footer{
         color: #0065FC;
     }
 
-    nav a:hover, nav a:focus, nav a:active {
+    #lien_activites:hover, #lien_activites:active, #lien_hebergements:hover, #lien_heebergements:active{
         border-top: none;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
         padding: 20px 0;
     }
-    
+
     #link_inscription:hover {
         border-top: none;
         border-bottom: none;
